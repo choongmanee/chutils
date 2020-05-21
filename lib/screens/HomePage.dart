@@ -1,9 +1,9 @@
-import 'package:chutils/screens/aws_cdn/home.dart';
+import 'package:chutils/screens/CDNCloudformationPage.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
+class HomePage extends StatelessWidget {
   static final String route = '/';
-  final List<Type> mainScreens = [AwsCdnHome];
+  final List<Type> mainScreens = [CDNCloudformationPage];
 
   @override
   Widget build(BuildContext context) {
@@ -20,14 +20,14 @@ class Home extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text(AwsCdnHome.title),
-                    Text(AwsCdnHome.description),
+                    Text(CDNCloudformationPage.title),
+                    Text(CDNCloudformationPage.description),
                   ],
                 ),
               ),
             ),
             onPressed: () {
-              Navigator.pushNamed(context, AwsCdnHome.route);
+              Navigator.pushNamed(context, CDNCloudformationPage.route);
             },
           )
         ],

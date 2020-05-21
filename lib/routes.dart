@@ -1,9 +1,9 @@
-import 'package:chutils/screens/home.dart';
+import 'package:chutils/screens/HomePage.dart';
 import 'package:flutter/material.dart';
 
-import 'screens/aws_cdn/home.dart';
+import 'screens/CDNCloudformationPage.dart';
 
 final Map<String, WidgetBuilder> routes = {
-  Home.route: (context) => Home(),
-  AwsCdnHome.route: (context) => AwsCdnHome(),
+  HomePage.route: (context) => HomePage(),
+  CDNCloudformationPage.route: (context) => CDNCloudformationPage(),
 };
