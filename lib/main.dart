@@ -1,8 +1,12 @@
 import 'package:chutils/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MultiProvider(
+    providers: [],
+    child: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
